@@ -1,0 +1,5 @@
+outs:
+- md5: a1f82442518cb06afa92746a852b5698
+  size: 792492
+  hash: md5
+  path: Amazon_stock_data_2000_2025.csv

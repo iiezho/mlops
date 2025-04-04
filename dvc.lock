@@ -15,6 +15,11 @@ stages:
       hash: md5
       md5: b93aea27ba45f8b24bdd52928f1f2b99
       size: 2564
+    params:
+      params.yaml:
+        features.chi2percentile: 50
+        features.test_path: data/adult.test
+        features.train_path: data/adult.data
     outs:
     - path: data/pipeline.pkl
       hash: md5
@@ -28,3 +33,19 @@ stages:
       hash: md5
       md5: adf63b6ce20f7ee74f63d5dabb325226
       size: 10829967
+  preprocess:
+    cmd: python src/preprocessing.py
+    deps:
+    - path: data/Amazon_stock_data_2000_2025.csv
+      hash: md5
+      md5: a1f82442518cb06afa92746a852b5698
+      size: 792492
+    - path: src/preprocessing.py
+      hash: md5
+      md5: 3390a5e5b976f2f58cc6dff8b5d55921
+      size: 779
+    outs:
+    - path: data/processed_amazon_stock.csv
+      hash: md5
+      md5: 226df1e45f64fe01b41b995f7d840747
+      size: 1279832

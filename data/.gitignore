@@ -3,3 +3,5 @@
 /pipeline.pkl
 /processed_train_data.csv
 /processed_test_data.csv
+/Amazon_stock_data_2000_2025.csv
+/processed_amazon_stock.csv
