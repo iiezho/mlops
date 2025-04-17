@@ -6,4 +6,5 @@ dependencies:
   - pandas=2.2.2
   - scikit-learn=1.5.1
   - mlflow=2.15.1
-
+  - pip:
+      - metaflow
